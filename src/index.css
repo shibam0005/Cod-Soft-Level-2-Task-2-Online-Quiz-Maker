@@ -1,0 +1,133 @@
+/* Global styles and animations */
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease-out;
+}
+
+/* Make text visible on dark background */
+h1, h2, h3, h4, h5, h6, p, .card-title, .card-text {
+  color: #ffffff !important;
+}
+
+/* Navbar adjustments for dark background */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .nav-link {
+  color: #333333 !important;
+}
+
+/* Card styling for dark background */
+.card {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  color: #333333 !important;
+}
+
+.card-title, .card-text {
+  color: #333333 !important;
+}
+
+/* Form controls */
+.form-control {
+  background-color: #ffffff !important;
+  color: #333333 !important;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #007bff !important;
+  border-color: #007bff !important;
+}
+
+.btn-secondary {
+  background-color: #6c757d !important;
+  border-color: #6c757d !important;
+}
+
+.btn-success {
+  background-color: #28a745 !important;
+  border-color: #28a745 !important;
+}
+
+.btn-danger {
+  background-color: #dc3545 !important;
+  border-color: #dc3545 !important;
+}
+
+/* Table styling */
+.table {
+  color: #ffffff !important;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.table-bordered {
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+/* Staggered letter animation */
+@keyframes slideUpLetter {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-label {
+  display: inline-block;
+}
+
+.letter {
+  display: inline-block;
+  animation: slideUpLetter 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+.letter:nth-child(1) { animation-delay: 0s; }
+.letter:nth-child(2) { animation-delay: 0.08s; }
+.letter:nth-child(3) { animation-delay: 0.16s; }
+.letter:nth-child(4) { animation-delay: 0.24s; }
+.letter:nth-child(5) { animation-delay: 0.32s; }
+.letter:nth-child(6) { animation-delay: 0.4s; }
+.letter:nth-child(7) { animation-delay: 0.48s; }
+.letter:nth-child(8) { animation-delay: 0.56s; }
+.letter:nth-child(9) { animation-delay: 0.64s; }
+.letter:nth-child(10) { animation-delay: 0.72s; }
+.letter:nth-child(11) { animation-delay: 0.8s; }
+/* Add a subtle hover effect for all Bootstrap buttons */
+.btn {
+  transition: opacity 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Three.js background canvas */
+.three-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #0e0e0e; /* dark base */
+  pointer-events: none;
+}

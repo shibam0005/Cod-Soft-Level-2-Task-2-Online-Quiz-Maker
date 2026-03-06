@@ -1,0 +1,48 @@
+.custom-floating-label-wrapper {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.custom-floating-input {
+  width: 100%;
+  padding: 1rem 0.75rem 0.5rem 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  font-family: inherit;
+  background-color: #fff;
+}
+
+.custom-floating-input:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.custom-floating-label {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  font-size: 1rem;
+  color: #6c757d;
+  pointer-events: none;
+  transition: top 0.2s ease-in-out, left 0.2s ease-in-out, font-size 0.2s ease-in-out, color 0.2s ease-in-out;
+  white-space: nowrap;
+  background-color: #fff;
+  padding: 0 0.5rem;
+}
+
+.custom-floating-label.active {
+  top: -0.65rem;
+  left: 0.75rem;
+  font-size: 0.85rem;
+  color: #495057;
+}
+
+.custom-floating-input:focus ~ .custom-floating-label {
+  top: -0.65rem;
+  left: 0.75rem;
+  font-size: 0.85rem;
+  color: #0056b3;
+}
