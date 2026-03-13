@@ -69,6 +69,3 @@ The frontend will open at [http://localhost:3000](http://localhost:3000).
 - Authentication token is stored in `localStorage` and sent in the header.
 - The design uses Bootstrap for responsiveness; feel free to swap Tailwind or custom CSS.
 
----
-
-This scaffold gives a human-made, moderately advanced architecture that can be extended further with pagination, user profiles, and enhanced UI/UX.
